@@ -1,5 +1,6 @@
 package;
 
+import odd.Framebuffer;
 import odd.Context;
 
 class Main
