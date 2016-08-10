@@ -57,7 +57,7 @@ class Sandbox
         m2 = new Mesh(g);
         m2.transform *= Mat4x4.translate(4, 4, -10);
         m3 = new Mesh(g);
-        m3.transform *= Mat4x4.translate(4, -4, -4);
+        m3.transform *= Mat4x4.translate(4, -4, -2);
         
         pipeline = new Pipeline(800, 600);
         pipeline.shader = new MyShader();
@@ -82,7 +82,7 @@ class Sandbox
     
     public function draw(framebuffer : Framebuffer) : Void
     {
-        framebuffer.clear(0x222222);
+        framebuffer.clear(0x000000);
         pipeline.execute(framebuffer);
     }
 }
