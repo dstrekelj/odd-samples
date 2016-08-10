@@ -24,6 +24,10 @@ class MyShader extends Shader
     
     override public function fragment(fragCoord : Vec4, frontFacing : Bool, pointCoord : Vec2i) : Bool
     {
+        fragmentColor.x = 1 - fragCoord.z;
+        fragmentColor.y = 1 - fragCoord.z;
+        fragmentColor.z = 1 - fragCoord.z;
+        
         return true;
     }
 }

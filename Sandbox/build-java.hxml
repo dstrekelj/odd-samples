@@ -3,4 +3,4 @@
 -cp src
 -main Main
 -java out/java/
--debug
+#-debug
