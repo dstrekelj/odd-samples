@@ -19,7 +19,7 @@ class Shading
     {
         // Create a new rasterization pipeline with provided viewport dimensions
         pipeline = new Pipeline(width, height);
-        // Set shader program to the default one
+        // Set shader program
         pipeline.setShader(new MyShader());
         // Create a new camera
         var camera = new Camera();

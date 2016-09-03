@@ -1,0 +1,6 @@
+-lib odd
+-lib odd-target-android
+
+-cp src
+-main cube.Main
+-java out/android/
