@@ -1,10 +1,9 @@
 package triangle;
 
-import odd.rasterizer.object.Camera;
-import odd.rasterizer.object.Geometry;
-import odd.rasterizer.object.Mesh;
-import odd.rasterizer.object.Scene;
-import odd.rasterizer.Pipeline;
+import odd.rasterizer.pipeline.Pipeline;
+import odd.rasterizer.Geometry;
+import odd.rasterizer.Mesh;
+import odd.rasterizer.Scene;
 import odd.rasterizer.Shader;
 import odd.Framebuffer;
 
@@ -17,7 +16,7 @@ class Triangle
     {
         // Create a new rasterization pipeline with provided viewport dimensions
         pipeline = new Pipeline(width, height);
-        // Set shader program to the default one
+        // Set shader program
         pipeline.setShader(new Shader());
         // Create new triangle geometry
         var gTriangle = new Geometry();
@@ -40,7 +39,7 @@ class Triangle
     public function draw(framebuffer : Framebuffer) : Void
     {
         // Clear the framebuffer
-        framebuffer.clear(0x0000ff);
+        framebuffer.clear(0x123456);
         // Execute the rasterization pipeline
         pipeline.execute(framebuffer);
     }
