@@ -1,5 +1,6 @@
 package shading;
 
+import odd.math.Angle;
 import odd.math.Mat4x4;
 import odd.rasterizer.pipeline.Pipeline;
 import odd.rasterizer.Camera;
@@ -24,9 +25,9 @@ class Shading
         // Create a new camera
         var camera = new Camera();
         // Position camera away from the origin point
-        camera.translate(0, 0, 5);
+        camera.translate(0, 0, 10);
         // Set camera projection transform
-        camera.setProjectionTransform(Mat4x4.perspective(100, 4 / 3, 1, 100));
+        camera.setProjectionTransform(Mat4x4.perspective(Angle.rad(60), 4 / 3, 1, 100));
         // Create new triangle geometry
         var gTriangle = new Geometry();
         gTriangle.positions = [ -1.0, -1.0, 0.0, /**/ 1.0, -1.0, 0.0, /**/ 0.0, 1.0, 0.0 ];

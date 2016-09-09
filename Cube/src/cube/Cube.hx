@@ -2,6 +2,7 @@ package cube;
 
 import cube.MyShader;
 
+import odd.math.Angle;
 import odd.math.Mat4x4;
 import odd.rasterizer.pipeline.Pipeline;
 import odd.rasterizer.Camera;
@@ -26,7 +27,7 @@ class Cube
         // Create a new camera
         var camera = new Camera();
         camera.translate(0, 0, 5);
-        camera.setProjectionTransform(Mat4x4.perspective(100, 4 / 3, 1, 100));
+        camera.setProjectionTransform(Mat4x4.perspective(Angle.rad(60), 4 / 3, 1, 100));
         // Create new cube geometry
         var gCube = new Geometry();
         gCube.positions = [
@@ -54,13 +55,15 @@ class Cube
         // Set the scene the pipeline will rasterize
         pipeline.setScene(scene);
     }
-
+    //var t = 0.0;
     public function update() : Void
     {
+        //t += 0.01;
         // Rotate cube mesh
         mCube.transform *= Mat4x4.rotateX(0.02);
         mCube.transform *= Mat4x4.rotateY(0.04);
         mCube.transform *= Mat4x4.rotateZ(0.06);
+        //mCube.transform *= Mat4x4.translate(0, 0, Math.sin(t) / 10);
     }
 
     public function draw(framebuffer : Framebuffer) : Void
