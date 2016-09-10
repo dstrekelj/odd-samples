@@ -26,7 +26,7 @@ class TriangleShaded
 
         var camera = new Camera();
         camera.setProjectionTransform(Mat4x4.perspective(Angle.rad(60), width / height, 1, 10));
-        camera.translate(0, 0, 3);
+        camera.translate(0, 0, 2);
 
         var gTriangle = new Geometry();
         gTriangle.positions = [-1.0, -1.0, 0.0, /**/ 1.0, -1.0, 0.0, /**/ 0.0, 1.0, 0.0];
@@ -48,7 +48,7 @@ class TriangleShaded
     {
         time += TIME_STEP;
 
-        mTriangle.transform *= Mat4x4.rotateY(Math.cos(time) / 100);
+        mTriangle.transform *= Mat4x4.rotateY(Math.cos(time) / 40);
     }
 
     public function draw(framebuffer : Framebuffer) : Void
