@@ -1,0 +1,6 @@
+-lib odd
+-lib odd-target-html5
+
+-cp src
+-main odd.samples.sample03.Main
+-js out/html5/sample03.js

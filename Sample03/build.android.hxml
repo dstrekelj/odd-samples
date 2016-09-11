@@ -1,0 +1,6 @@
+-lib odd
+-lib odd-target-android
+
+-cp src
+-main odd.samples.sample03.Main
+-java out/android/
