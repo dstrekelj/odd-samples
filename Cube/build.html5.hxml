@@ -1,6 +1,0 @@
--lib odd
--lib odd-target-html5
-
--cp src
--main cube.Main
--js out/html5/cube.js

@@ -1,6 +1,0 @@
--lib odd
--lib odd-target-java
--cp src
--main Main
--java out/java/
-#-debug

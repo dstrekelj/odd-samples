@@ -1,6 +1,0 @@
--lib odd
--lib odd-target-java
-
--cp src
--main room.Main
--java out/java/

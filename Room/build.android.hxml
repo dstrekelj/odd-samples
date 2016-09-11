@@ -1,6 +1,0 @@
--lib odd
--lib odd-target-android
-
--cp src
--main room.Main
--java out/android/
