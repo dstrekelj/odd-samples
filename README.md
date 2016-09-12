@@ -26,3 +26,4 @@ Please note that **performance depicted by animated GIFs is not representative o
 | <img src="https://thumbs.gfycat.com/ImpoliteWelltodoBighornedsheep-size_restricted.gif" width="80" height="60"/> | 2   | Shaded triangle   | Rasterization of a shaded triangle mesh.     |
 | <img src="https://thumbs.gfycat.com/RapidResponsibleCopperhead-size_restricted.gif" width="80" height="60"/>     | 3   | Textured triangle | Rasterization of a textured triangle.        |
 | <img src="https://thumbs.gfycat.com/CandidDopeyDeviltasmanian-size_restricted.gif" width="80" height="60"/>      | 4   | Textured plane    | Rasterization of a textured plane.           |
+| <img src="https://thumbs.gfycat.com/GleefulDimHanumanmonkey-size_restricted.gif" width="80" height="60"/>        | 5   | Depth buffer      | Rasterization of a scene via depth buffer.   |
