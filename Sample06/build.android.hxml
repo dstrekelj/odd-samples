@@ -1,0 +1,8 @@
+-lib odd
+-lib odd-target-android
+
+-cp src
+-main odd.samples.sample06.Main
+-java out/android/
+
+-D odd_assets=res/
